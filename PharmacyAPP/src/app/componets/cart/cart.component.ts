@@ -19,7 +19,12 @@ export class CartComponent {
     return this.cartItems.reduce((total, item) => total + (item.productPrice * item.quantity), 0);
   }
 
+
   removeFromCart(item: any) {
     this.cartService.removeFromCart(item); 
+  }
+
+  getTotalCost(): number {
+    return this.cartItems.reduce((total, item) => total + (item.productPrice * (item.quantity || 1)), 0);
   }
 }

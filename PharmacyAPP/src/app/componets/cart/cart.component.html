@@ -36,3 +36,9 @@
 </ng-template>
 
 
+<div *ngIf="cartItems.length > 0">
+  <hr />
+  <div class="text-right">
+    <h4>Total Cost: Rs.{{ getTotalCost() }}/-</h4>
+  </div>
+</div>
