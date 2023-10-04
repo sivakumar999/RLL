@@ -11,7 +11,7 @@ import { ProductService } from '../../services/product.service';
 })
 export class ProductComponent implements OnInit {
   public products: any = [];
-  private cartItems: any[] = [];
+  public cartItems: any[] = [];
 
   constructor(private product: ProductService, private cartService: CartService,private toast:NgToastService) {
     this.products = this.product.getProducts();
@@ -25,11 +25,6 @@ export class ProductComponent implements OnInit {
       });
   }
 
-  /*addToCart(product: any) {
-    this.cartService.addToCart(product);
-   // alert('Item has been added to the cart!');
-    this.toast.success({ detail: "Product Added", summary: "Product Added To Cart", duration: 1000 }); 
-  }*/
   addToCart(item: any) {
     const existingItem = this.cartItems.find(cartItem => cartItem.productName === item.productName);
 
@@ -39,7 +34,10 @@ export class ProductComponent implements OnInit {
       item.quantity = 1;
       this.cartItems.push(item);
     }
+
+    this.cartService.addToCart(item); // Add the item to the cart service
     this.toast.success({ detail: "Product Added", summary: "Product Added To Cart", duration: 1000 });
+    console.log('addToCart called');
   }
 
 }

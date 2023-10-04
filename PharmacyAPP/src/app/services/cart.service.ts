@@ -7,6 +7,7 @@ export class CartService {
   private cartItems: any[] = [];
 
   constructor() {
+    console.log('CartService initialized');
     // Load cart items from localStorage on service initialization
     const savedCartItems = localStorage.getItem('cartItems');
     if (savedCartItems) {

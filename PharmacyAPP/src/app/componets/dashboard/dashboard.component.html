@@ -12,7 +12,8 @@
         <a class="nav-link" href="#">Home</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" routerLink="/product"> Products</a>
+        <!--<a class="nav-link" routerLink="/product"> Products</a>-->
+        <a routerLink="/product" routerLinkActive="active"><b>Products</b></a>
       </li>
       <li class="nav-item">
         <a class="nav-link" routerLink="/cart">Cart</a>
@@ -156,10 +157,8 @@
       </main>
     </ng-container>
 
-  <div class="container-fluid">
-    
-    <router-outlet></router-outlet>
-  </div>
+    <app-product></app-product>
+  <app-cart></app-cart>
 
 
 

@@ -11,13 +11,15 @@ export class CartComponent {
 
   constructor(private cartService: CartService) {
     this.cartItems = this.cartService.getCartItems();
+    console.log(this.cartItems);
   }
 
+  
   getTotalPrice(): number {
     return this.cartItems.reduce((total, item) => total + (item.productPrice * item.quantity), 0);
   }
 
   removeFromCart(item: any) {
-    this.cartService.removeFromCart(item);
+    this.cartService.removeFromCart(item); 
   }
 }

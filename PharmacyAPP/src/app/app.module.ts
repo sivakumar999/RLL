@@ -14,6 +14,8 @@ import { FormsModule } from '@angular/forms';
 import { ResetComponent } from './componets/reset/reset.component';
 import { ProductComponent } from './componets/product/product.component';
 import { CartComponent } from './componets/cart/cart.component';
+import { CartService } from './services/cart.service';
+
 
 
 
@@ -28,8 +30,8 @@ import { CartComponent } from './componets/cart/cart.component';
     ResetComponent,
     ProductComponent,
     CartComponent
-    
-    
+
+
   ],
   imports: [
     BrowserModule,
@@ -39,12 +41,16 @@ import { CartComponent } from './componets/cart/cart.component';
     NgToastModule,
     FormsModule
 
+
   ],
   providers: [{
     provide: HTTP_INTERCEPTORS,
     useClass: TokenInterceptor,
-    multi: true
-  }],
+    multi: true,
+
+  },
+    CartService,
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
