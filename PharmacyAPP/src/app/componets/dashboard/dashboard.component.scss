@@ -1,0 +1,143 @@
+.navbarr {
+  background: linear-gradient(to top, #63C6C6 50%, #4FACAC 90%) no-repeat;
+}
+
+.navbar-light .navbar-toggler-icon {
+  background-color: #ffffff; /* White color for the toggler icon */
+}
+
+.navbar-light .navbar-toggler:focus, .navbar-light .navbar-toggler {
+  outline-color: #ffffff; /* White color for focus outline on the toggler icon */
+}
+
+.navbar-nav .nav-link {
+  color: #000000; /* Black color for the menu links */
+}
+
+
+
+.card {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.card-img-top {
+  max-height: 200px;
+  object-fit: cover;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.card-title {
+  font-size: 1.25rem;
+}
+
+.card-text {
+  font-size: 1rem;
+}
+
+
+
+.copyright {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.navbar-bran {
+  background-image: linear-gradient(to right, violet, indigo, blue, green, yellow, orange, red);
+  background-size: 200% 100%;
+  animation: rainbowAnimation 3s infinite linear;
+  border-radius: 50%;
+  width: 150px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 20px;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+
+@keyframes rainbowAnimation {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 100% 0;
+  }
+}
+
+/*
+*/
+.navbar-nav .nav-link {
+  padding: 0.5rem 1.5rem; /* Increased padding for Login and Signup buttons */
+}
+
+.navbar-nav .nav-link:nth-child(n+2) {
+  background-color: #f8f9fa; /* Same color as the navbar background */
+}
+
+
+/*footer {
+  background-color: #63C6C6;*/ /* Medical-related background color */
+/*color: #fff;*/ /* Text color */
+/*text-align: center;
+  padding: 10px 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}*/
+
+footer {
+  background-color: #f8f9fa; /* Background color for the footer */
+  padding: 50px 0; /* Add some padding for better spacing */
+}
+
+footer h4 {
+  font-size: 18px; /* Adjust the font size for section titles */
+  font-weight: bold;
+  margin-bottom: 15px; /* Add some space below the title */
+}
+
+footer ul {
+  list-style-type: none; /* Remove default bullet points */
+  padding: 0;
+}
+
+footer li {
+  margin-bottom: 10px; /* Add space between each list item */
+}
+
+.footer-container {
+  max-width: 1200px; /* Set a maximum width for the content */
+  margin: 0 auto; /* Center the content */
+}
+
+.footer-container .row {
+  margin-bottom: 20px; /* Add space between rows */
+}
+
+.footer-container .col-md-3 {
+  /* Adjust the column width as needed */
+}
+
+.footer-container ul {
+  margin: 0;
+  padding: 0;
+}
+
+.footer-container ul li {
+  font-size: 14px; /* Adjust the font size for list items */
+}
+
+.footer-container a {
+  text-decoration: none; /* Remove default underline for links */
+  color: #343a40; /* Set link color */
+}
+
+.footer-container a:hover {
+  color: #007bff; /* Set link color on hover */
+}
