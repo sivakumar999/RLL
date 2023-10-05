@@ -15,6 +15,7 @@ import { ResetComponent } from './componets/reset/reset.component';
 import { ProductComponent } from './componets/product/product.component';
 import { CartComponent } from './componets/cart/cart.component';
 import { CartService } from './services/cart.service';
+import { HomeComponent } from './componets/home/home.component';
 
 
 
@@ -29,7 +30,8 @@ import { CartService } from './services/cart.service';
     DashboardComponent,
     ResetComponent,
     ProductComponent,
-    CartComponent
+    CartComponent,
+    HomeComponent
 
 
   ],
